@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_window</class>
+ <widget class="QMainWindow" name="main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>main_window</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="threads_label">
+        <property name="text">
+         <string>Threads count:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="threads_box">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="n1_label">
+        <property name="text">
+         <string>N1:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="n1_box">
+        <property name="minimum">
+         <number>10</number>
+        </property>
+        <property name="maximum">
+         <number>2000</number>
+        </property>
+        <property name="value">
+         <number>50</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="n2_label">
+        <property name="text">
+         <string>N2:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="n2_box">
+        <property name="minimum">
+         <number>10</number>
+        </property>
+        <property name="maximum">
+         <number>2000</number>
+        </property>
+        <property name="value">
+         <number>50</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="function_menu">
+    <property name="title">
+     <string>Functions</string>
+    </property>
+    <addaction name="sin"/>
+    <addaction name="x2y2"/>
+    <addaction name="linear"/>
+    <addaction name="x2x"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="menu_func"/>
+    <addaction name="menu_approx"/>
+    <addaction name="menu_both"/>
+    <addaction name="separator"/>
+    <addaction name="menu_mesh"/>
+   </widget>
+   <addaction name="function_menu"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="sin">
+   <property name="text">
+    <string>sin (x^2 + y^2)</string>
+   </property>
+  </action>
+  <action name="x2y2">
+   <property name="text">
+    <string>x^2 + y^2</string>
+   </property>
+  </action>
+  <action name="linear">
+   <property name="text">
+    <string>x + y</string>
+   </property>
+  </action>
+  <action name="x2x">
+   <property name="text">
+    <string>x^2 + x</string>
+   </property>
+  </action>
+  <action name="menu_func">
+   <property name="text">
+    <string>only function</string>
+   </property>
+  </action>
+  <action name="menu_approx">
+   <property name="text">
+    <string>only approximation</string>
+   </property>
+  </action>
+  <action name="menu_both">
+   <property name="text">
+    <string>function and approximation</string>
+   </property>
+  </action>
+  <action name="menu_res">
+   <property name="text">
+    <string>residual</string>
+   </property>
+  </action>
+  <action name="menu_mesh">
+   <property name="text">
+    <string>mesh</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
