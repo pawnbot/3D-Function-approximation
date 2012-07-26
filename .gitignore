@@ -4,6 +4,9 @@ leak.out*
 *.kdev*
 tags
 Doxyfile
+*.tlog
+moc_*
+ui_*.h
 build*/build
 build*/build-con
 build*/build.static

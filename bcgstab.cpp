@@ -8,7 +8,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // Make array linear combination: RES = X + alpha Y
-static __inline__ void
+static inline void
 linear_combination_1 (int n,    // array size
                       const double *x,  // input array X
                       const double *y,  // input array Y
@@ -40,7 +40,7 @@ linear_combination_1 (int n,    // array size
 
 ////////////////////////////////////////////////////////////////////////////////
 // Make array linear combination: RES = X + beta (RES + alpha Y)
-static __inline__ void
+static inline void
 linear_combination_2 (int n,    // array size
                       const double *x,  // input array X
                       const double *y,  // input array Y
@@ -73,7 +73,7 @@ linear_combination_2 (int n,    // array size
 
 ////////////////////////////////////////////////////////////////////////////////
 // Make array linear combination: RES = RES + alpha X + beta Y
-static __inline__ void
+static inline void
 linear_combination_5 (int n,    // array size
                       const double *x,  // input array X
                       const double *y,  // input array Y

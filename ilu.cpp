@@ -483,7 +483,7 @@ solve_system_sparse_down_matrix_ilu_factorized (
 
 ////////////////////////////////////////////////////////////////////////////////
 // Copy array x of double to array y.
-static __inline__ void
+static inline void
 copy_array (int n,              // array size
             const double *src,  // input array
             double *dst         // output array
@@ -596,7 +596,7 @@ make_lumped_jacobian_preconditioner_matrix (
 /*
  * Scale vector x by vector mult and put result into y
  */
-static __inline__ void
+static inline void
 scale_vector_coordinates2 (
   unsigned int n,               // vector length
   const double *x,              // (n) vector x
